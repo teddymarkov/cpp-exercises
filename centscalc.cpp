@@ -22,6 +22,7 @@ int main() {
     std::cout << "nickels:\t" << (cents / NICKEL_VALUE) << std::endl;
     cents %= NICKEL_VALUE;
     std::cout << "pennies:\t" << (cents / PENNY_VALUE) << std::endl;
+    cents %= PENNY_VALUE;
     // In the end we should be left with no cents
     if (cents != 0) {
         std::cout << "There has been an error in the calculation.";
